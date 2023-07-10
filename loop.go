@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	for start := time.Now(); time.Since(start) < time.Second * 60; {
+	for start := time.Now(); time.Since(start) < time.Second * 30; {
+	// for true {
 		exec.Command("git", "commit", "--allow-empty", "-m", "'go empty'").Output()
 	}
 

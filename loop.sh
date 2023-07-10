@@ -1,6 +1,6 @@
 #!/bin/bash
 
-secs=60
+secs=10
 endTime=$(( $(date +%s) + secs ))
 
 while [ $(date +%s) -lt $endTime ];
